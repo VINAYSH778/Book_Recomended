@@ -2,6 +2,8 @@
 import streamlit as st
 import pickle
 import numpy as np
+# from login_app import login_app
+# from login_app import main
 
 def recommend_book(book):
     index = np.where(pt.index==book)[0][0]
@@ -166,3 +168,8 @@ if st.sidebar.button("Recommend Me"):
         st.image(moviee[4][2])
         st.text(moviee[4][0])
         st.text(moviee[4][1])
+
+# if __name__ == "__main__":
+    
+#     recommend_book()
+
